@@ -225,7 +225,7 @@ const accounts = ['Aria012', 'Momhameed12', 'jon0123', 'whyimpre'];
 accounts.forEach((accountName, index) => {
   setTimeout(() => {
     createAndRunBot(accountName);
-  }, index * 30000); // 4-second delay between account connections
+  }, index * 30000); // 30-second delay between account connections
 });
 const express = require('express');
 const app = express();
