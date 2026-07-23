@@ -11,7 +11,7 @@ const config = require('./config.json'); // Load bot configuration
 // --- 2. CONSTANTS ---
 
 const RECONNECT_DELAY = 10000;       // 10 seconds
-const RECONNECT_FAIL_DELAY = 300000; // 5 minutes
+const RECONNECT_FAIL_DELAY = 10000; // 10 seconds
 const WATCHDOG_TIMEOUT = 45000;      // 45 seconds
 const SESSION_DURATION = 10800000;   // 3 hours
 const TPA_INTERVAL = 60000;          // 60 seconds
