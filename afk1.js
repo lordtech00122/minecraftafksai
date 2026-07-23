@@ -227,3 +227,17 @@ accounts.forEach((accountName, index) => {
     createAndRunBot(accountName);
   }, index * 4000); // 4-second delay between account connections
 });
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Simple endpoint for pings
+app.get('/', (req, res) => {
+  res.send('AFK Bot is running!');
+});
+
+app.listen(port, () => {
+  console.log(`Keep-alive web server listening on port ${port}`);
+});
+
+// --- YOUR MINECRAFT BOT CODE BELOW ---
